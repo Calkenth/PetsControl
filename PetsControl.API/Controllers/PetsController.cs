@@ -17,7 +17,10 @@ namespace PetsControl.API.Controllers
         [HttpGet("GetAll")]
         public IEnumerable<Pet> GetAll()
         {
-            return null;
+            return new List<Pet>()
+            {
+                new Pet() { Name = "Fenrir", Race = "Ragdoll", BirthDate = DateTime.Now }
+            };
         }
 
         // GET api/<PetsController>/5
