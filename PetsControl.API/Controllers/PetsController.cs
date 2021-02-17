@@ -13,7 +13,7 @@ namespace PetsControl.API.Controllers
     [ApiController]
     public class PetsController : ControllerBase
     {
-        // GET: api/<PetsController>
+        // GET: <PetsController>
         [HttpGet("GetAll")]
         public IEnumerable<Pet> GetAll()
         {
@@ -23,26 +23,26 @@ namespace PetsControl.API.Controllers
             };
         }
 
-        // GET api/<PetsController>/5
+        // GET <PetsController>/5
         [HttpGet("{id}")]
         public Pet Get(int id)
         {
             return new Pet() { Name = "Fenrir", Race = "Ragdoll", BirthDate = DateTime.Now };
         }
 
-        // POST api/<PetsController>
+        // POST <PetsController>
         [HttpPost]
         public void Post([FromBody] string value)
         {
         }
 
-        // PUT api/<PetsController>/5
+        // PUT <PetsController>/5
         [HttpPut("{id}")]
         public void Put(int id, [FromBody] string value)
         {
         }
 
-        // DELETE api/<PetsController>/5
+        // DELETE <PetsController>/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
