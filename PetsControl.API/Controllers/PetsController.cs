@@ -24,7 +24,7 @@ namespace PetsControl.API.Controllers
         }
 
         // GET <PetsController>/5
-        [HttpGet("{id}")]
+        [HttpGet("Get/{id}")]
         public Pet Get(int id)
         {
             return new Pet() { Name = "Fenrir", Race = "Ragdoll", BirthDate = DateTime.Now };

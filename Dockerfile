@@ -25,4 +25,4 @@ WORKDIR /app
 COPY --from=publish /app/publish .
 # ENTRYPOINT ["dotnet", "PetsControl.API.dll"]
 # Use the following instead for Heroku
-CMD ASPNETCORE_URLS=http://*:$PORT dotnet PetsControl.API.dll
+CMD ASPNETCORE_URLS=http://+*:$PORT dotnet PetsControl.API.dll
