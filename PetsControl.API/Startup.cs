@@ -29,7 +29,7 @@ namespace PetsControl.API
             services.AddCors(c =>
             {
                 c.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin());
-            })
+            });
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
