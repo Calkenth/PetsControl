@@ -19,7 +19,8 @@ namespace PetsControl.API.Controllers
         {
             return new List<Pet>()
             {
-                new Pet() { Name = "Fenrir", Race = "Ragdoll", BirthDate = DateTime.Now }
+                new Pet() { Name = "Fenrir", Race = "Ragdoll", BirthDate = DateTime.Now },
+                new Pet() { Name = "Dexter", Race = "Ragdoll2", BirthDate = DateTime.Now}
             };
         }
 
